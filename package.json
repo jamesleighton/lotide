@@ -1,0 +1,24 @@
+{
+  "name": "lotide",
+  "version": "1.0.0",
+  "description": "test runner",
+  "main": "n",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "jest --watch *.js"
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesleighton/lotide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesleighton/lotide/issues"
+  },
+  "homepage": "https://github.com/jamesleighton/lotide#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}

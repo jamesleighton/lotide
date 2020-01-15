@@ -17,7 +17,7 @@ const { assertEqual } = require('./assertEqual');
 
   //head();
   //console.log(head([5,6,7]);
-  head([5,6,7]), 5;
+  //head([5,6,7]), 5;
   //assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
   
 
