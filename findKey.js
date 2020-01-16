@@ -8,17 +8,19 @@ const assertEqual = function(actual, expected) {
 //assertEqual("Lighthouse Labs", "Bootcamp");
 //assertEqual(1, 1);
 
-const findKey = function(restaurant, stars) {
-  let keys = Object.keys(restaurant); 
-   for (let key of keys) {
-     if (stars === restaurant[key]) {
-       return key;
-     }
-   } 
-}//, x => x.stars === 2 // => "noma"
-const rating = function() {
-
+const findKey = function(restList, cb) {
+  let restName = undefined;
+  for (let key in restList) {
+    if (cb(restList[key])) {
+      restName = key;
+      break;
+    }
+  }
+  return restName;
+  //cb(restList);
 }
+
+
 
 const restaurant = {
   "Blue Hill": { stars: 1 },
@@ -29,5 +31,4 @@ const restaurant = {
   "Akelarre":  { stars: 3 }
 };
 
-console.log(assertEqual(findKey("noma", 2), true));
-//assertEqual(findKey(bestTVShowsByGenre, "That '70s Show"), undefined);
+assertEqual(findKey(restaurant, x => x.stars === 2 ), "noma");
