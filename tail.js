@@ -5,9 +5,7 @@ const assertEqual = require('./assertEqual');
     return array.slice(1);
   };
   const words = ["Yo Yo", "Lighthouse", "Labs"];
-  tail(words);
-  assertEqual(words.length, 3);
-  assertEqual("Lighthouse Labs", "Bootcamp");
+  console.log(tail(words));
   assertEqual(1, 1);
 
 
